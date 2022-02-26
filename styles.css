@@ -1,0 +1,55 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+}
+
+.search-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+label{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+input{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: gray;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 4px 2px rgb(177, 175, 175);
+}
+
+.user-cards{
+    margin-top: 1.3rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 0.8rem  0.5rem;
+}
+
+.card{
+    padding: 0.5rem;
+    border: solid 1px rgb(110, 109, 109);
+    border-radius: 0.1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.card .header{
+    margin-bottom: 0.4rem;
+    color: rgb(39, 39, 39);
+}
+
+.card .body{
+    color: rgb(78, 79, 80);
+}
